@@ -1,0 +1,7 @@
+<svg width="50" height="50" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hamburgurIconOpen">
+<rect id="hamburgerBunBottom" x="9" y="19" width="21" height="3" rx="1.5" fill="#094398"/>
+<rect id="hamburger" x="9" y="9" width="21" height="3" rx="1.5" fill="#3D8BFD"/>
+<rect id="hamburgerBunTop" x="7" y="14" width="25" height="3" rx="1.5" fill="#0A58CA"/>
+</g>
+</svg>

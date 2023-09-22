@@ -1,0 +1,19 @@
+<svg width="85" height="35" viewBox="0 0 85 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="navLogo" clip-path="url(#clip0_1_2)">
+<g id="nameGroup">
+<path id="inital1" d="M23.1264 2.54545L30.6832 23.973H30.9815L38.5384 2.54545H41.7699L32.4233 28H29.2415L19.8949 2.54545H23.1264Z" fill="#9393FD"/>
+<path id="initial2" d="M46.1264 28H42.8949L52.2415 2.54545H55.4233L64.7699 28H61.5384L53.9318 6.57244H53.733L46.1264 28ZM47.3196 18.0568H60.3452V20.7912H47.3196V18.0568Z" fill="#9393FD"/>
+</g>
+<g id="lineGroup">
+<rect id="logoLine1" x="14" y="32" width="11" height="2" fill="#12C2E9"/>
+<rect id="logoLine4" x="62" y="32" width="11" height="2" fill="#C471ED"/>
+<rect id="logoLine2" x="30" y="32" width="11" height="2" fill="#7194ED"/>
+<rect id="logoLine3" x="46" y="32" width="11" height="2" fill="#745FF5"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="85" height="35" fill="white"/>
+</clipPath>
+</defs>
+</svg>

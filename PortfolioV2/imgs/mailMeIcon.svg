@@ -1,0 +1,12 @@
+<svg width="198" height="170" viewBox="0 0 198 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mailMeIcon">
+<g id="blobBgGroup">
+<path id="blobBg" fill-rule="evenodd" clip-rule="evenodd" d="M50.5339 46.2258C67.7105 26.8799 87.3228 22.0824 108.195 32.0674C129.067 42.0524 145.404 57.732 156.197 78.1701C167.032 98.6471 162.664 115.77 143.346 128.563C124.07 141.356 105.759 146.271 89.4646 143.034C73.17 139.835 57.9673 127.51 44.6544 106.838C31.3836 86.1659 33.3994 65.5328 50.5339 46.2258Z" fill="#7B61FF" fill-opacity="0.65" stroke="white"/>
+</g>
+<g id="letterGroup">
+<rect id="bodyPart" x="71.5" y="69.5" width="55" height="31" fill="white" stroke="black"/>
+<path id="bottomPart" d="M72.7024 99.5L99 82.5944L125.298 99.5L98.8437 99.5L72.7024 99.5Z" fill="#EAE8E8" stroke="black"/>
+<path id="topPart" d="M125.297 70.5059L99 87.4056L72.7027 70.5002L125.297 70.5059Z" fill="#F7F7F7" stroke="black"/>
+</g>
+</g>
+</svg>

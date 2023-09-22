@@ -1,0 +1,18 @@
+<svg width="39" height="30" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lightAndDarkMode">
+<g id="switchBodyGroup">
+<rect id="switchBody" x="3.5" y="8.5" width="33" height="13" rx="6.5" fill="url(#paint0_linear_2_17)" stroke="#052C65"/>
+</g>
+<g id="switchCircleGroup">
+<g id="switchCircle">
+<path d="M34.5245 15C34.5245 17.7214 32.1039 20 29.0245 20C25.945 20 23.5245 17.7214 23.5245 15C23.5245 12.2786 25.945 10 29.0245 10C32.1039 10 34.5245 12.2786 34.5245 15Z" stroke="#B4D2FF"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2_17" x1="26.5" y1="13.5" x2="12" y2="13.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#094398"/>
+<stop offset="1" stop-color="#3D8BFD"/>
+</linearGradient>
+</defs>
+</svg>
