@@ -11,40 +11,17 @@
   --border-radius-base: 0.5rem;
 }
 
-[data-theme="light"] {
-  --color-bg: #ffffff;
-  --color-fg: #000000;
-  --color-gco: rgba(216, 216, 216, 0.171);
-  --color-gc: rgb(255, 255, 255);
-  --color-text: rgb(0, 0, 0);
-}
-
-[data-theme="dark"] {
-  --color-bg: #000000;
-  --color-fg: #ffffff;
-  --color-gco: rgba(212, 212, 212, 0.068);
-  --color-gc: rgba(212, 212, 212, 0.068);
-  --color-text: rgba(255, 255, 255, 0.733);
-}
-
-body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
-}
-
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: var(--color-bg);
 }
 
 .navLogo {
   padding-left: 10px;
   font-size: 30px;
   text-decoration: none;
-  color: rgba(0, 0, 255, 0.416);
 }
 
 .navItems {
@@ -428,7 +405,7 @@ svg:hover #lightTriangle {
 }
 
 .gridContainer {
-  background-color: var(--color-gco);
+  background-color: rgba(211, 211, 211, 0.11);
   display: grid;
   grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
   text-align: center;
@@ -448,7 +425,7 @@ svg:hover #lightTriangle {
 
 .gridItemOne {
   border-radius: 20px;
-  background-color: var(--color-gc);
+  background-color: rgba(128, 128, 128, 0.05);
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -458,7 +435,7 @@ svg:hover #lightTriangle {
 
 .gridItemTwo {
   border-radius: 20px;
-  background-color: var(--color-gc);
+  background-color: rgba(128, 128, 128, 0.05);
   border-radius: 20px;
   grid-column-start: 4;
   grid-column-end: 4;
@@ -470,7 +447,7 @@ svg:hover #lightTriangle {
 
 .gridItemThree {
   border-radius: 20px;
-  background-color: var(--color-gc);
+  background-color: rgba(128, 128, 128, 0.05);
   border-radius: 20px;
   grid-column-start: 6;
   grid-column-end: 6;
@@ -486,7 +463,6 @@ svg:hover #lightTriangle {
 
 .recentWorkDescription {
   font-size: 20px;
-  color: var(--color-text);
   margin-bottom: 27px;
 }
 
