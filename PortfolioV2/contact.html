@@ -189,7 +189,7 @@
             </a>
           </li>
           <li>
-            <a class="navLinks" href="#">
+            <a class="navLinks" href="about.html">
               <svg
                 class="navTextAbout"
                 viewBox="0 0 137 58"
@@ -229,22 +229,79 @@
             </a>
           </li>
         </ul>
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input style="display: none" type="checkbox" id="checkbox" />
-            <img class="lightModeSwitch" src="/imgs/lightMode.svg" alt="" />
-          </label>
-        </div>
+        <div></div>
 
         <button class="mobileNavToggle" aria-controls="primaryNav">
           <span class="visually-hidden">Menu</span>
-          <img class="hamburgerOpen" src="/imgs/hamburgurIconOpen.svg" alt="" />
-          <img
+          <svg
+            class="hamburgerOpen"
+            width="50"
+            height="50"
+            viewBox="0 0 39 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="hamburgurIconOpen">
+              <rect
+                id="hamburgerBunBottom"
+                x="9"
+                y="19"
+                width="21"
+                height="3"
+                rx="1.5"
+                fill="#094398"
+              />
+              <rect
+                id="hamburger"
+                x="9"
+                y="9"
+                width="21"
+                height="3"
+                rx="1.5"
+                fill="#3D8BFD"
+              />
+              <rect
+                id="hamburgerBunTop"
+                x="7"
+                y="14"
+                width="25"
+                height="3"
+                rx="1.5"
+                fill="#0A58CA"
+              />
+            </g>
+          </svg>
+          <svg
             class="hamburgerClosed"
-            src="/imgs/hamburgurIconClosed.svg"
-            alt=""
-            aria-hidden="true"
-          />
+            width="50"
+            height="50"
+            viewBox="0 0 39 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="hamburgurIconClosed">
+              <rect
+                id="hamburgerLine1"
+                x="10"
+                y="20.2206"
+                width="21"
+                height="3"
+                rx="1.5"
+                transform="rotate(-39.017 10 20.2206)"
+                fill="#094398"
+              />
+              <rect
+                id="hamburgerLine2"
+                x="26"
+                y="23"
+                width="21"
+                height="3"
+                rx="1.5"
+                transform="rotate(-140.622 26 23)"
+                fill="#3D8BFD"
+              />
+            </g>
+          </svg>
         </button>
       </nav>
     </header>
@@ -364,11 +421,23 @@
             <a href="about.html">About</a>
           </div>
           <div class="socialContainer">
-            <img class="socialsIcons" src="/imgs/b-git-logo.png" alt="" />
-            <img class="socialsIcons" src="/imgs/li-icon.png" alt="" />
+            <a href="https://github.com/Vincent1Vincent2">
+              <img
+                class="socialsIcons"
+                src="imgs/b-git-logo.png"
+                alt="GitHub Icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/vincent-ahlin-023ba6111/">
+              <img
+                class="socialsIcons"
+                src="imgs/li-icon.png"
+                alt="LinkedIn Icon"
+              />
+            </a>
           </div>
         </div>
-        <div></div>
+        <div style="width: 150px"></div>
       </div>
     </footer>
     <script src="app.js"></script>
