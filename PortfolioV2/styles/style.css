@@ -11,6 +11,63 @@
   --border-radius-base: 0.5rem;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.progressContainer {
+  width: 100vw;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.progressBar {
+  height: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    4deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(140, 160, 255, 1) 0%,
+    rgba(137, 139, 255, 1) 17%,
+    rgba(111, 104, 255, 1) 41%,
+    rgba(108, 95, 255, 1) 56%,
+    rgba(81, 81, 255, 1) 79%,
+    rgba(57, 57, 255, 1) 100%
+  );
+  width: 0%;
+}
+
+.hiddenLeft {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hiddenRight {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hiddenDown {
+  transform: translateY(-50%);
+  transition: all 1s;
+  opacity: 0;
+}
+
+.show {
+  transform: translateX(-0%);
+  opacity: 1;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -69,11 +126,15 @@
 }
 
 .mobileNavToggle {
-  z-index: 100;
-  background: white;
+  z-index: 999;
+  background: rgb(255, 255, 255);
   cursor: pointer;
   display: none;
   border: none;
+}
+
+.hamburgerOpen {
+  width: 80px;
 }
 
 @media (max-width: 768px) {
@@ -84,8 +145,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
-    background: rgb(255, 255, 255);
+    z-index: 1;
+    background-image: url(/imgs/navBG.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
     display: none;
   }
@@ -124,6 +188,7 @@
   }
   .hamburgerClosed {
     display: none;
+    width: 80px;
   }
   .showMenu {
     display: block;
@@ -326,7 +391,7 @@ a:hover #about5 {
 }
 
 .flexContainer {
-  height: 90svh;
+  height: 100svh;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -353,6 +418,11 @@ a:hover #about5 {
 .heroDescription {
   color: gray;
   font-size: 20px;
+  transition-delay: 200ms;
+}
+
+.trianglesLogo {
+  transition-delay: 400ms;
 }
 
 /* These are the colors for my arrow animation on the ladning page */
@@ -421,6 +491,7 @@ svg:hover #lightTriangle {
   font-size: clamp(45px, 10vw, 65px);
   padding-top: 35px;
   padding-bottom: 35px;
+  transition-delay: 300ms;
 }
 
 .gridItemOne {
@@ -431,6 +502,7 @@ svg:hover #lightTriangle {
   grid-row-start: 2;
   padding: 40px;
   width: clamp(100%, 30vw, 20vw);
+  transition-delay: 300ms;
 }
 
 .gridItemTwo {
@@ -443,6 +515,7 @@ svg:hover #lightTriangle {
   padding-bottom: 89px;
   padding: 40px;
   width: clamp(100%, 30vw, 20vw);
+  transition-delay: 400ms;
 }
 
 .gridItemThree {
@@ -455,6 +528,7 @@ svg:hover #lightTriangle {
   padding: 20px;
   padding-bottom: 89px;
   width: clamp(100%, 30vw, 20vw);
+  transition-delay: 500ms;
 }
 
 .recentWorkImg {
@@ -494,6 +568,7 @@ svg:hover #lightTriangle {
 .projectDescription {
   color: gray;
   font-size: clamp(25px, 15px, 10px);
+  transition-delay: 200ms;
 }
 .projectImg {
   width: clamp(300px, 45vw, 500px);
@@ -583,7 +658,7 @@ textarea {
 textarea {
   margin-bottom: 40px;
   background-color: rgba(128, 0, 128, 0);
-  height: 75px;
+  height: 45px;
   border: none;
   border-top: solid rgba(102, 100, 200, 0.346) 2px;
   border-bottom: solid rgba(102, 100, 200, 0.346) 2px;
@@ -607,7 +682,12 @@ textarea:focus {
 }
 
 .aboutContainer {
+  background-image: url(/imgs/Frame\ 2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  height: 90svh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -615,15 +695,14 @@ textarea:focus {
 }
 
 .aboutContainer h1 {
-  font-size: clamp(65px, 10vw, 100px);
+  font-size: clamp(45px, 10vw, 100px);
   line-height: 1;
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .aboutDescription {
-  width: clamp(300px, 55vw, 1000px);
-  font-size: clamp(20px, 5vw, 35px);
+  width: clamp(250px, 80vw, 1000px);
+  font-size: clamp(10px, 5vw, 25px);
 }
 
 .aboutContainer h1 p {
@@ -693,6 +772,10 @@ textarea:focus {
 .linkContainer a {
   text-decoration: none;
   color: rgb(126, 126, 126);
+}
+
+.socialsContainer {
+  display: flex;
 }
 
 .socialsIcons {
@@ -767,7 +850,7 @@ textarea:focus {
     background-color: #6521f3;
   }
   .projectFlexContainer {
-    height: 65svh;
+    height: 95svh;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -787,7 +870,7 @@ textarea:focus {
   }
 
   .projectFlexContainerTwo {
-    height: 65svh;
+    height: 95svh;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -798,7 +881,7 @@ textarea:focus {
   }
 
   .contactContainer {
-    height: 120svh;
+    height: 105svh;
     border-radius: 20px;
     background-color: rgba(245, 243, 243, 0);
     display: flex;
@@ -813,7 +896,7 @@ textarea:focus {
   }
 
   .formContainer {
-    height: 110svh;
+    height: 100svh;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
@@ -895,6 +978,10 @@ textarea:focus {
     border-radius: 30px;
     background-color: #6521f3;
     border: none;
+  }
+
+  .aboutContainer {
+    height: 115svh;
   }
 
   .footerContainer {

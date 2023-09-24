@@ -13,9 +13,14 @@
     <title>Welcome to my site</title>
   </head>
   <body>
+    <div class="header">
+      <div class="progressContainer">
+        <div class="progressBar" id="myBar"></div>
+      </div>
+    </div>
     <header>
       <nav class="navBar" id="primaryNav">
-        <a class="navLogo" href="">
+        <a class="navLogo hiddenDown" href="">
           <svg
             width="150"
             height="120"
@@ -47,7 +52,7 @@
             </g>
           </svg>
         </a>
-        <ul class="navItems">
+        <ul class="navItems hiddenDown">
           <li>
             <a class="navLinks" href="index.html">
               <svg
@@ -229,13 +234,11 @@
             </a>
           </li>
         </ul>
-        <div></div>
-        <button class="mobileNavToggle" aria-controls="primaryNav">
+        <div style="width: 150px"></div>
+        <button class="mobileNavToggle hiddenDown" aria-controls="primaryNav">
           <span class="visually-hidden">Menu</span>
           <svg
             class="hamburgerOpen"
-            width="50"
-            height="50"
             viewBox="0 0 39 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -272,8 +275,6 @@
           </svg>
           <svg
             class="hamburgerClosed"
-            width="50"
-            height="50"
             viewBox="0 0 39 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -309,15 +310,15 @@
     <main>
       <div class="projectFlexContainer">
         <div class="projectFlexItemOne">
-          <h1 class="projectTitle">Glowing grid website</h1>
-          <p class="projectDescription">
+          <h1 class="projectTitle hiddenLeft">Glowing grid website</h1>
+          <p class="projectDescription hiddenLeft">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
             molestiae.
           </p>
         </div>
         <div class="projectFlexItemOne">
           <img
-            class="projectImg"
+            class="projectImg hiddenRight"
             src="/imgs/grid.png"
             alt="Picture of a website i made"
           />
@@ -328,14 +329,14 @@
       <div class="projectFlexContainerTwo">
         <div class="projectFlexItemTwo">
           <img
-            class="projectImg"
+            class="projectImg hiddenLeft"
             src="/imgs/grid.png"
             alt="Picture of a website i made"
           />
         </div>
         <div class="projectFlexItemTwo">
-          <h1 class="projectTitle">Glowing grid website</h1>
-          <p class="projectDescription">
+          <h1 class="projectTitle hiddenRight">Glowing grid website</h1>
+          <p class="projectDescription hiddenRight">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
             molestiae.
           </p>
@@ -346,6 +347,7 @@
       <div class="footerContainer">
         <div id="footerLogo">
           <svg
+            class="hiddenDown"
             width="150"
             height="120"
             viewBox="0 0 120 100"
@@ -377,27 +379,31 @@
           </svg>
         </div>
         <div class="innerFooterContainer">
-          <div class="linkContainer">
+          <div class="linkContainer hiddenDown">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">About</a>
           </div>
-          <div class="socialContainer">
-            <a href="https://github.com/Vincent1Vincent2">
-              <img
-                class="socialsIcons"
-                src="imgs/b-git-logo.png"
-                alt="GitHub Icon"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/vincent-ahlin-023ba6111/">
-              <img
-                class="socialsIcons"
-                src="imgs/li-icon.png"
-                alt="LinkedIn Icon"
-              />
-            </a>
+          <div class="socialsContainer">
+            <div>
+              <a href="">
+                <img
+                  src="imgs/b-git-logo.png"
+                  class="socialsIcons hiddenDown"
+                  alt="GitHub Icon"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="imgs/li-icon.png"
+                  class="socialsIcons hiddenDown"
+                  alt="GitHub Icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div style="width: 150px"></div>

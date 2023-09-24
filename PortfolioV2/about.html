@@ -13,9 +13,14 @@
     <title>About Me</title>
   </head>
   <body>
+    <div class="header">
+      <div class="progressContainer">
+        <div class="progressBar" id="myBar"></div>
+      </div>
+    </div>
     <header>
       <nav class="navBar" id="primaryNav">
-        <a class="navLogo" href="">
+        <a class="navLogo hiddenDown" href="">
           <svg
             width="150"
             height="120"
@@ -47,7 +52,7 @@
             </g>
           </svg>
         </a>
-        <ul class="navItems">
+        <ul class="navItems hiddenDown">
           <li>
             <a class="navLinks" href="index.html">
               <svg
@@ -229,14 +234,12 @@
             </a>
           </li>
         </ul>
-        <div></div>
+        <div style="width: 150px"></div>
 
-        <button class="mobileNavToggle" aria-controls="primaryNav">
+        <button class="mobileNavToggle hiddenDown" aria-controls="primaryNav">
           <span class="visually-hidden">Menu</span>
           <svg
             class="hamburgerOpen"
-            width="50"
-            height="50"
             viewBox="0 0 39 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -273,8 +276,6 @@
           </svg>
           <svg
             class="hamburgerClosed"
-            width="50"
-            height="50"
             viewBox="0 0 39 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -309,18 +310,19 @@
     <div class="outerCursor"></div>
     <main>
       <div class="aboutContainer">
-        <div class="aboutTitle">
+        <div class="aboutTitle hiddenDown">
           <h1>Want to know more?</h1>
         </div>
-        <div class="aboutDescription">
+        <div class="aboutDescription hiddenLeft">
           <p>
-            My name is Vincent Ahlin, and I am currently studying to become a
-            front-end developer. I love learning new skills and have always had
-            a constant drive to evolve my craft. Before taking my new life on
-            this new path, I worked in the gym industry. I started as a cleaner
-            at 13 years old and worked my way up until I was the manager of a
-            gym with about 2000 members, and 35 employees that includes
-            reception, personal trainers and grouptraning instructors.
+            My name is Vincent Ahlin and I am currently studying to become a
+            front-end developer. I love learning new skills and always putting
+            my own twist to it. I've always had a constant drive to evolve my
+            craft and never settle. Before starting this new path I worked in
+            the gym industry. I started as a cleaner at 13 years old and for the
+            next 10 years worked my way up until I was the manager of a gym with
+            about 2000 members. I had 35 employees, that includes receptionists,
+            personal trainers and grouptraning instructors.
           </p>
         </div>
       </div>
@@ -329,6 +331,7 @@
       <div class="footerContainer">
         <div id="footerLogo">
           <svg
+            class="logo hiddenDown"
             width="150"
             height="120"
             viewBox="0 0 120 100"
@@ -360,27 +363,31 @@
           </svg>
         </div>
         <div class="innerFooterContainer">
-          <div class="linkContainer">
+          <div class="linkContainer hiddenDown">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">About</a>
           </div>
-          <div class="socialContainer">
-            <a href="https://github.com/Vincent1Vincent2">
-              <img
-                class="socialsIcons"
-                src="imgs/b-git-logo.png"
-                alt="GitHub Icon"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/vincent-ahlin-023ba6111/">
-              <img
-                class="socialsIcons"
-                src="imgs/li-icon.png"
-                alt="LinkedIn Icon"
-              />
-            </a>
+          <div class="socialsContainer">
+            <div>
+              <a href="">
+                <img
+                  src="imgs/b-git-logo.png"
+                  class="socialsIcons hiddenDown"
+                  alt="GitHub Icon"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="imgs/li-icon.png"
+                  class="socialsIcons hiddenDown"
+                  alt="GitHub Icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div style="width: 150px"></div>

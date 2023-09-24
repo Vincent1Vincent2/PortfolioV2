@@ -1,3 +1,17 @@
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 const menu = document.querySelector(".navItems");
 const menuItems = document.querySelectorAll(".navItems");
 const hamburger = document.querySelector(".mobileNavToggle");
@@ -64,3 +78,22 @@ links.forEach((link) => {
     innerCursor.classList.add("fade");
   });
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hiddenLeft");
+hiddenElements.forEach((el) => observer.observe(el));
+
+const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
+hiddenElementsRight.forEach((el) => observer.observe(el));
+
+const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
+hiddenElementsDown.forEach((el) => observer.observe(el));
