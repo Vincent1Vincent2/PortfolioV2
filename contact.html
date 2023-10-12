@@ -364,16 +364,23 @@
           </div>
           <form class="hiddenRight" action="">
             <div class="fromGroup">
-              <label for="strName">Name</label>
-              <input type="text" />
+              <label for="strName">Name*</label>
+              <input placeholder="Name" type="text" required />
             </div>
             <div>
-              <label for="">Email</label>
-              <input type="email" />
+              <label for="">Email*</label>
+              <input placeholder="Email" type="email" required />
             </div>
             <div>
-              <label for="message">Message</label>
-              <textarea name="message" id="" cols="40" rows="15"></textarea>
+              <label for="message">Message*</label>
+              <textarea
+                placeholder="Message"
+                name="message"
+                id=""
+                cols="40"
+                rows="15"
+                required
+              ></textarea>
             </div>
             <button class="submitButton" type="submit">SEND</button>
           </form>
