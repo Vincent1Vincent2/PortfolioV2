@@ -138,6 +138,11 @@
 }
 
 @media (max-width: 768px) {
+  .innerCursor,
+  .outerCursor {
+    display: none;
+  }
+
   .navItems {
     position: fixed;
     transition: transform 0.2s;
@@ -146,7 +151,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: url(imgs/navBG.svg);
+    background-image: url(/imgs/navBG.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -396,7 +401,7 @@ a:hover #about5 {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  background-image: url(imgs/Frame\ 2.png);
+  background-image: url(/imgs/Frame\ 2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -548,6 +553,12 @@ svg:hover #lightTriangle {
   background-color: #6521f3;
 }
 
+.wrapper {
+  background-image: url(/imgs/projectsBg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .projectFlexContainer {
   height: 90svh;
   display: flex;
@@ -682,7 +693,7 @@ textarea:focus {
 }
 
 .aboutContainer {
-  background-image: url(imgs/Frame\ 2.png);
+  background-image: url(/imgs/Frame\ 2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -849,6 +860,14 @@ textarea:focus {
     border-radius: 30px;
     background-color: #6521f3;
   }
+
+  .wrapper {
+    background-image: url(imgs/projectsBgMobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .projectFlexContainer {
     height: 95svh;
     display: flex;
