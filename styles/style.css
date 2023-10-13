@@ -151,7 +151,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: url(.imgs/navBG.svg);
+    background-image: url(imgs/navBG.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -401,7 +401,7 @@ a:hover #about5 {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  background-image: url(.imgs/Frame\ 2.png);
+  background-image: url(imgs/Frame\ 2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -554,7 +554,7 @@ svg:hover #lightTriangle {
 }
 
 .wrapper {
-  background-image: url(.imgs/projectsBg.svg);
+  background-image: url(imgs/projectsBg.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -693,7 +693,7 @@ textarea:focus {
 }
 
 .aboutContainer {
-  background-image: url(.imgs/Frame\ 2.png);
+  background-image: url(imgs/Frame\ 2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -862,7 +862,7 @@ textarea:focus {
   }
 
   .wrapper {
-    background-image: url(.imgs/projectsBgMobile.svg);
+    background-image: url(imgs/projectsBgMobile.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
