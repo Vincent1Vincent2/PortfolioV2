@@ -900,7 +900,7 @@ textarea:focus {
   }
 
   .contactContainer {
-    height: 105svh;
+    height: 130svh;
     border-radius: 20px;
     background-color: rgba(245, 243, 243, 0);
     display: flex;
@@ -915,7 +915,7 @@ textarea:focus {
   }
 
   .formContainer {
-    height: 100svh;
+    height: 120svh;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
