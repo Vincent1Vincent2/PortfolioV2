@@ -731,6 +731,20 @@ textarea:focus {
   line-height: 1;
 }
 
+.thankyou {
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 3.5rem;
+  gap: 5rem;
+}
+
 .footerContainer {
   display: flex;
   align-items: center;
