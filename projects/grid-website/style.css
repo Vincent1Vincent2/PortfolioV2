@@ -1,0 +1,220 @@
+* {
+  font-size: 80px;
+  color: white;
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  max-width: 50%;
+  position: relative;
+  left: 25%;
+  transform: translate(0, 100%);
+}
+
+.a-item1 {
+  grid-column: span 2;
+  border: solid 10px rgb(221, 208, 167);
+  border-radius: 20px;
+  transition: 0.5s;
+  text-shadow: 0 0 0.25em;
+  box-shadow: 0 0 0.5em 0 rgb(221, 208, 167);
+  position: relative;
+}
+
+.a-item1:hover {
+  text-shadow: 0 0 0.5em;
+  box-shadow: 0 0 1em 0em rgb(221, 208, 167);
+}
+
+.a-item2 {
+  grid-row: span 2;
+  border: solid 10px rgb(123, 164, 130);
+  border-radius: 20px;
+  transition: 0.5s;
+  text-shadow: 0 0 0.25em;
+  box-shadow: 0 0 0.5em 0 rgb(123, 164, 130);
+  position: relative;
+}
+
+.a-item2:hover {
+  text-shadow: 0 0 0.5em;
+  box-shadow: 0 0 1em 0 rgb(123, 164, 130);
+}
+
+.a-item3 {
+  border: solid 10px rgb(174, 150, 139);
+  border-radius: 20px;
+  transition: 0.5s;
+  text-shadow: 0 0 0.25em;
+  box-shadow: 0 0 0.5em 0 rgb(174, 150, 139);
+  position: relative;
+  transition: 1s;
+}
+
+.a-item3:hover {
+  text-shadow: 0 0 0.5em;
+  box-shadow: 0 0 1.5em 0 rgb(174, 150, 139);
+}
+
+.a-item4 {
+  border: solid 10px rgb(138, 47, 36);
+  border-radius: 20px;
+  transition: 0.5s;
+  text-shadow: 0 0 0.25em;
+  box-shadow: 0 0 0.5em 0 rgb(138, 47, 36);
+  position: relative;
+}
+
+.a-item4:hover {
+  text-shadow: 0 0 0.5em;
+  box-shadow: 0 0 1.5em 0 rgb(138, 47, 36);
+}
+
+/* This is  for under tabs*/
+.page-head-project {
+  border: none;
+  text-align: end;
+  background-color: rgb(221, 208, 167);
+  padding: 25px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.project-item {
+  grid-column: span 3;
+}
+
+.project-item2 {
+  grid-column: span 2;
+}
+
+.page-head-socials {
+  text-align: end;
+  padding: 25px;
+  border: none;
+  background-color: rgb(123, 164, 130);
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.socials-item {
+  grid-column: span 3;
+}
+
+.socials-item2 {
+  grid-column: span 2;
+}
+
+.page-head-about {
+  text-align: end;
+  padding: 20px;
+  border: none;
+  background-color: rgb(174, 150, 139);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.about-item {
+  grid-column: span 3;
+}
+
+.about-item2 {
+  grid-column: span 2;
+}
+
+.page-head-art {
+  text-align: end;
+  padding: 20px;
+  border: none;
+  background-color: rgb(138, 47, 36);
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.art-item {
+  grid-column: span 3;
+}
+
+.art-item2 {
+  grid-column: span 2;
+}
+
+/*
+@keyframes example {
+  0% {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+*/
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+    transform: translate(0, 0%);
+  }
+  .a-item1 {
+    grid-column: span 4;
+    border: solid 10px rgb(221, 208, 167);
+    border-radius: 20px;
+  }
+  .a-item2 {
+    grid-column: span 4;
+    border: solid 10px rgb(123, 164, 130);
+    border-radius: 20px;
+  }
+
+  .a-item3 {
+    grid-column: span 4;
+    border: solid 10px rgb(174, 150, 139);
+    border-radius: 20px;
+  }
+
+  .a-item4 {
+    grid-column: span 4;
+    border: solid 10px rgb(138, 47, 36);
+    border-radius: 20px;
+  }
+}

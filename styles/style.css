@@ -580,7 +580,18 @@ svg:hover #lightTriangle {
   color: gray;
   font-size: clamp(25px, 15px, 10px);
   transition-delay: 200ms;
+  margin-bottom: 30px;
 }
+
+.projectButton {
+  padding: 10px;
+  color: #6521f3;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #f0f0f000;
+  border: solid #6521f3;
+}
+
 .projectImg {
   width: clamp(300px, 45vw, 500px);
 }
