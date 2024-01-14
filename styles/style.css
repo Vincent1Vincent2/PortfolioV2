@@ -391,7 +391,7 @@ a:hover #about5 {
 .outerCursor.grow {
   height: 45px;
   width: 45px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.603);
   transition: all 0.5s ease;
 }
 
@@ -413,6 +413,7 @@ a:hover #about5 {
 
 .flexItem:nth-child(2) {
   align-self: end;
+  height: 880px;
 }
 
 .heroTitle {

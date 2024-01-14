@@ -1,9 +1,9 @@
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
-  myFunction();
+  scrollFunction();
 };
 
-function myFunction() {
+function scrollFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height =
     document.documentElement.scrollHeight -
@@ -97,3 +97,10 @@ hiddenElementsRight.forEach((el) => observer.observe(el));
 
 const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
 hiddenElementsDown.forEach((el) => observer.observe(el));
+
+let projects = [
+  {
+    title: "Grid Glowing website",
+    description: "This is a description",
+  },
+];
