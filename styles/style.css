@@ -590,12 +590,17 @@ svg:hover #lightTriangle {
   color: #000000;
   text-decoration: none;
   border-radius: 30px;
-  background-color: #f0f0f000;
-  border: solid #000000;
+  background-color: #ebebeb7b;
+  border: none;
+}
+
+.projectButton:hover {
+  background-color: #aeaeae7b;
+  border: none;
 }
 
 .projectImg {
-  width: clamp(300px, 45vw, 500px);
+  width: clamp(300pxrgba (240, 240, 240, 0.371) 00px);
 }
 
 .projectFlexContainerTwo {
