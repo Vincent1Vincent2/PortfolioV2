@@ -578,19 +578,20 @@ svg:hover #lightTriangle {
 }
 
 .projectDescription {
-  color: gray;
+  padding-top: 1rem;
+  color: rgb(21, 21, 21);
   font-size: clamp(25px, 15px, 10px);
   transition-delay: 200ms;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .projectButton {
-  padding: 10px;
-  color: #6521f3;
+  padding: 0.5rem 3rem;
+  color: #000000;
   text-decoration: none;
   border-radius: 30px;
   background-color: #f0f0f000;
-  border: solid #6521f3;
+  border: solid #000000;
 }
 
 .projectImg {
@@ -910,7 +911,6 @@ textarea:focus {
   }
 
   .projectDescription {
-    color: gray;
     font-size: 18px;
   }
 
