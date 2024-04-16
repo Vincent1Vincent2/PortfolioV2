@@ -541,6 +541,18 @@ svg:hover #lightTriangle {
   width: clamp(50%, 30vw, 250px);
 }
 
+.active {
+  display: none;
+}
+
+.ImgCont:hover .static {
+  display: none;
+}
+
+.ImgCont:hover .active {
+  display: inline;
+}
+
 .recentWorkDescription {
   font-size: 20px;
   margin-bottom: 27px;
@@ -563,7 +575,7 @@ svg:hover #lightTriangle {
 .projectFlexContainer {
   height: 90svh;
   display: flex;
-  gap: 10px;
+  gap: 2.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -574,7 +586,7 @@ svg:hover #lightTriangle {
 
 .projectTitle {
   font-size: clamp(85px, 100px, 150px);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .projectDescription {
@@ -606,7 +618,7 @@ svg:hover #lightTriangle {
 .projectFlexContainerTwo {
   height: 90svh;
   display: flex;
-  gap: 10px;
+  gap: 2.5rem;
   justify-content: center;
   align-items: center;
   background-color: rgba(211, 211, 211, 0.089);
