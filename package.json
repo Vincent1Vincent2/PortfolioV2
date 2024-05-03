@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Scene exported with Spline",
   "scripts": {
-    "start": "serve"
+    "start": "serve",
+    "test:safari": "npx playwright test --headed --browser=webkit"
   },
   "devDependencies": {
     "@playwright/test": "^1.43.1",

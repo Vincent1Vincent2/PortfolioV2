@@ -34,24 +34,15 @@ hamburger.addEventListener("click", toggleMenu);
 const innerCursor = document.querySelector(".innerCursor");
 const outerCursor = document.querySelector(".outerCursor");
 
-window.onpointermove = (event) => {
-  const { clientX, clientY } = event;
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  innerCursor.style.left = `${x}px`;
+  innerCursor.style.top = `${y}px`;
 
-  innerCursor.animate(
-    {
-      left: `${clientX}px`,
-      top: `${clientY}px`,
-    },
-    { duration: 300, fill: "forwards" }
-  );
-  outerCursor.animate(
-    {
-      left: `${clientX}px`,
-      top: `${clientY}px`,
-    },
-    { duration: 1500, fill: "forwards" }
-  );
-};
+  outerCursor.style.left = `calc(${e.clientX}px)`;
+  outerCursor.style.top = `calc(${e.clientY}px)`;
+});
 
 let links = Array.from(document.querySelectorAll("a"));
 
